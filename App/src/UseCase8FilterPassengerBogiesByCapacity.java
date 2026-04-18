@@ -17,7 +17,7 @@ public class UseCase8FilterPassengerBogiesByCapacity {
         System.out.println("Original Bogies:");
         bogies.forEach(System.out::println);
 
-        // Filter using Stream API (capacity > 60)
+        // Filter: capacity > 60
         List<Bogie> filteredBogies = bogies.stream()
                 .filter(b -> b.getCapacity() > 60)
                 .collect(Collectors.toList());
